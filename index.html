@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placar Champions Chicken</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/js.js"></script>
+</head>
+<body>
+    <div class="box">
+        <h1>Chicken Champions</h1>
+    </div>
+
+    <main class="container">
+        <section class="setup">
+            <h2>Seleção de Equipes</h2>
+            <div class="team-selection">
+                <div>
+                    <label for="team1"></label>
+                    <input type="text" id="team1" placeholder="Digite o nome do seu time...">
+                </div>
+                <div>
+                    <label for="team2"></label>
+                    <input type="text" id="team2" placeholder="Digite o nome do seu time...">
+                </div>
+                <button id="startGame">Iniciar Jogo</button>
+            </div>
+        </section>
+        <section id="scoreboard" class="hidden">
+            <div class="team" id="team1Box">
+                <h2 id="team1Name">Equipe 1</h2>
+                <h3 id="team1Score">0</h3>
+                <div class="buttons">
+                    <button class="score-btn" onclick="changeScore('team1', 1)">+1</button>
+                    <button class="score-btn" onclick="changeScore('team1', 2)">+2</button>
+                    <button class="score-btn" onclick="changeScore('team1', -1)">-1</button>
+                </div>
+            </div>
+
+            <div class="team" id="team2Box">
+                <h2 id="team2Name">Equipe 2</h2>
+                <h3 id="team2Score">0</h3>
+                <div class="buttons">
+                    <button class="score-btn" onclick="changeScore('team2', 1)">+1</button>
+                    <button class="score-btn" onclick="changeScore('team2', 2)">+2</button>
+                    <button class="score-btn" onclick="changeScore('team2', -1)">-1</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Histórico -->
+        <section id="historySection" class="hidden">
+            <h2>Placar</h2>
+            <ul id="history"></ul>
+        </section>
+        <div class="controls">
+            <button id="reset" class="hidden">Reiniciar Placar</button>
+            <button id="endGame" class="hidden">Finalizar Partida</button>
+        </div>
+
+        <section id="resultSection">
+            <h2 id="result"></h2>
+        </section>
+    </main>
+</body>
+</html>

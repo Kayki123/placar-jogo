@@ -1,0 +1,137 @@
+body {
+    background-image: url("../image/40f328fc-2418-4902-b3fc-48f0b11ea07c.jpg");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    border-radius: 1%;
+    box-shadow: 10px 10px 5px rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(46, 71, 19, 0.712);
+    text-align: center;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
+.container {
+    margin-top: 120px;
+}
+
+.team-selection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.team {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 0 10px black;
+}
+
+.team h3 {
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+.buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+#historySection {
+    margin-top: 30px;
+}
+
+#history {
+    list-style: none;
+    max-width: 500px;
+    margin: auto;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+#history li {
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+
+#reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: crimson;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: red;
+}
+#endGame{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(17, 73, 29);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+#startGame{ 
+    position: relative;
+    top: 6px;
+    padding: 10px 20px;
+    background-color: rgb(17, 73, 29);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+
+}
+#team1{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(14, 70, 35);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+#team2{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(14, 70, 35);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
